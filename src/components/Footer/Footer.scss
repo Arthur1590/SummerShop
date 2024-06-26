@@ -1,0 +1,75 @@
+.footer {
+	padding: 0.5rem 0 1rem 0;
+	min-height: calc(100vh - 125px);
+	.container {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-flow: row wrap;
+	}
+
+	&__links {
+		display: flex;
+		align-items: flex-start;
+		height: 100%;
+
+		&-list {
+			width: fit-content;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			gap: 1.5rem;
+
+			.socials {
+				display: flex;
+				width: 100%;
+				justify-content: flex-start;
+				gap: 1rem;
+			}
+
+			li {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 0.5rem;
+				img {
+					display: inline;
+				}
+
+				&::before {
+					position: absolute;
+					top: 0px;
+					left: -10px;
+					content: '~';
+					display: block;
+					width: 5px;
+					height: 5px;
+					color: $blackPrimary;
+					transition: 0.1s all ease-in-out;
+					opacity: 0;
+				}
+
+				&:hover::before {
+					opacity: 1;
+				}
+			}
+
+			p {
+				max-width: 235px;
+				color: $GrayPassive;
+				font-size: 1rem;
+				font-weight: 400;
+				line-height: 140%;
+			}
+
+			h1 {
+				color: $blackPrimary;
+				font-size: 1.5rem;
+				font-weight: 400;
+				line-height: 140%;
+				font-size: clamp(1rem, 1.5vw, 1.5rem);
+			}
+		}
+	}
+}

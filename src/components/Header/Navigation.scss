@@ -1,0 +1,51 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	padding: 0.5rem 0;
+	z-index: 99999;
+
+	&__nav {
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 0.5rem;
+		}
+		&-list {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.hot {
+				color: $redPrimary;
+			}
+
+			&-link {
+				display: block;
+				padding: 0.4rem 1rem;
+				font-weight: 400;
+				color: $blackNavLink;
+				transition: all 0.3s ease-in-out;
+
+				&:hover {
+					background: $activeLink;
+				}
+			}
+		}
+		&-listRow {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.icons__holder {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+			}
+		}
+	}
+}

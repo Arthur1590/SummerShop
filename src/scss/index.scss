@@ -1,0 +1,57 @@
+@import './fonts.scss';
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:is(a, li, ul) {
+	list-style: none;
+	text-decoration: none;
+	color: $blackNavLink;
+}
+.App {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	
+	.main {
+		flex-grow: 1;
+		margin-top: 109px;
+	}
+	.container {
+		max-width: 1399px;
+		width: 100%;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+}
+html {
+	scroll-behavior: smooth;
+}
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+div,
+button,
+input {
+	background: none;
+	border: none;
+	outline: none;
+	transition: all .3s ease-in-out;
+}
+* img {
+	object-fit: cover;
+	object-position: center;
+}
+body {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	background: $bgBody;
+}
+::-webkit-scrollbar {
+	display: none;
+}

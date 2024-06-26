@@ -1,0 +1,42 @@
+.customButton {
+	color: $Whitetext;
+	font-size: 1.25rem;
+	font-weight: 450;
+	line-height: 100%;
+	border: 0.06rem solid $Whitetext;
+	border-radius: 0.94rem;
+	padding: 16px 30px;
+	background: $BgButtonNormal;
+	transition: 0.3s all ease-out;
+
+	&:hover {
+		background: $BgButtonHover;
+		cursor: pointer;
+	}
+}
+.drop__windowBtn {
+	border: 0.5rem solid #ffffff4d;
+	box-shadow: 0 0 3px 10px #00000080;
+	backdrop-filter: blur(7.5px);
+	background: #ffffff;
+	border-radius: 50%;
+	width: 1.5rem;
+	height: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	position: absolute;
+	top: 12rem;
+	left: 10rem;
+
+	&:nth-of-type(2) {
+		top: 20rem;
+		right: 0rem;
+	}
+
+	&:hover {
+		cursor: pointer;
+		scale: 1.1;
+	}
+}
