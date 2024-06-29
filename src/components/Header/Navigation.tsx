@@ -5,16 +5,17 @@ import cart from '@DataApi_test/HeaderData/headerImg/Cart.svg'
 import search from '@DataApi_test/HeaderData/headerImg/search.svg'
 import logo from '@DataApi_test/HeaderData/headerImg/LOGO.svg'
 import { HeaderData } from '@DataApi_test/HeaderData/HeaderData'
+import Container from '@components/container/Container'
 
 const Navigation: FC = () => {
 	return (
 		<header className='header'>
 			<nav className='header__nav'>
-				<div className='container'>
+				<Container>
 					<ul className='header__nav-listRow'>
 						<li className='header__nav-list-item'>
 							<a href='tel:8 (800) 511 36 39 '>
-								8 (800) 511 36 39  <span>— бесплатно по России</span>
+								8 (800) 511 36 39 <span>— бесплатно по России</span>
 							</a>
 						</li>
 						<li className='header__nav-list-item'>
@@ -41,7 +42,7 @@ const Navigation: FC = () => {
 							Распродажа до -40%
 						</a>
 					</ul>
-				</div>
+				</Container>
 			</nav>
 		</header>
 	)

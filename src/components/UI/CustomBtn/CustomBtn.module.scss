@@ -15,10 +15,10 @@
 	}
 }
 .drop__windowBtn {
-	border: 0.5rem solid #ffffff4d;
-	box-shadow: 0 0 3px 10px #00000080;
+	box-shadow: 0 0 3px 10px #00000022;
 	backdrop-filter: blur(7.5px);
-	background: #ffffff;
+	background: #ffffff2a;
+	color: $Whitetext;
 	border-radius: 50%;
 	width: 1.5rem;
 	height: 1.5rem;
@@ -28,7 +28,8 @@
 	font-weight: 500;
 	position: absolute;
 	top: 12rem;
-	left: 10rem;
+	left: 11rem;
+	z-index: 9999;
 
 	&:nth-of-type(2) {
 		top: 20rem;

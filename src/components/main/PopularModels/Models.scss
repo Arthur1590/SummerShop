@@ -1,0 +1,70 @@
+.models {
+	.container {
+		position: relative;
+
+		.link__page {
+			position: absolute;
+			top: 0;
+			right: 5.5rem;
+		}
+	}
+
+	&__swiper {
+		user-select: none;
+
+		&-slide {
+			padding-bottom: 4.5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&-content {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 25px;
+
+				img {
+					max-width: 14rem;
+					width: 100%;
+					object-fit: cover;
+					background: #f8f8f8;
+				}
+				&-info {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 0.5rem;
+
+					.price,
+					.title {
+						color: $blackPrimary;
+						font-size: clamp(1rem, 1.5vw, 1.4rem);
+						font-weight: 500;
+						line-height: 140%;
+					}
+					.title {
+						font-weight: 400;
+					}
+					.body__size {
+						display: flex;
+						align-items: center;
+						gap: 0.5rem;
+
+						span {
+							font-size: clamp(1rem, 1.5vw, 1.2rem);
+							font-weight: 400;
+							padding: 0.3rem 0.4rem;
+							transition: 0.3s all ease-in-out;
+
+							&:hover {
+								background: $activeLink;
+								cursor: pointer;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

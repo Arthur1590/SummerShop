@@ -11,7 +11,7 @@ interface ISwiper {
 	text: string
 	dropText: string
 }
-export const HomeData: ISwiper[] = [
+export const IntroData: ISwiper[] = [
 	{
 		id: Math.floor(Math.random() * 100 - 1 + 2),
 		img: long1,
@@ -48,3 +48,4 @@ export const HomeData: ISwiper[] = [
 		dropText: 'Нежная для чувствиельных зон',
 	},
 ]
+
